@@ -1,0 +1,597 @@
+{
+  "V201234": {
+    "title": "PRE: GOVERNMENT RUN BY A FEW BIG INTERESTS OR FOR BENEFIT OF ALL",
+    "question": "Would you say the government is pretty much run by a few big interests looking out for themselves or that it is run for the benefit of all the people?",
+    "answer": "govt run for benefit of all people,"
+  },
+  "V201235": {
+    "title": "PRE: DOES GOVERNMENT WASTE MUCH TAX MONEY",
+    "question": "Do you think that people in government waste a lot of the money we pay in taxes, waste some of it, or don’t waste very much of it?",
+    "answer": "govt doesn't waste much tax money,"
+  },
+  "V201236": {
+    "title": "PRE: HOW MANY IN GOVERNMENT ARE CORRUPT",
+    "question": "How many of the people running the government are corrupt?",
+    "answer": "none in govt corrupt,"
+  },
+  "V201237": {
+    "title": "PRE: HOW OFTEN CAN PEOPLE BE TRUSTED",
+    "question": "Generally speaking, how often can you trust other people?",
+    "answer": "people never can be trusted,"
+  },
+  "V201238": {
+    "title": "PRE: ELECTIONS MAKE GOVERNMENT PAY ATTENTION",
+    "question": "How much do you feel that having elections makes the government pay attention to what the people think?",
+    "answer": "elections don't make govt pay attention,"
+  },
+  "V201246": {
+    "title": "PRE: 7PT SCALE SPENDING & SERVICES: SELFPLACEMENT",
+    "question": "Some people think the government should provide fewer services even in areas such as health and education in order to reduce spending. Suppose these people are at one end of a scale, at point 1. Other people feel it is important for the government to provide many more services even if it means an increase in spending. Suppose these people are at the other end, at point 7. Where would you place yourself on this scale, or haven’t you thought much about this?",
+    "answer": "govt provide many more services,"
+  },
+  "V201249": {
+    "title": "PRE: 7PT SCALE DEFENSE SPENDING: SELF-PLACEMENT",
+    "question": "Some people believe that we should spend much less money for defense. Suppose these people are at one end of a scale, at point 1. Others feel that defense spending should be greatly increased. Suppose these people are at the other end, at point 7. Where would you place yourself on this scale, or haven’t you thought much about this?",
+    "answer": "more defense spending,"
+  },
+  "V201252": {
+    "title": "PRE: 7PT SCALE GOV-PRIVATE MEDICAL INSURANCE SCALE: SELF-PLACEMENT",
+    "question": "There is much concern about the rapid rise in medical and hospital costs. Some people feel there should be a government insurance plan which would cover all medical and hospital expenses for everyone. Suppose these people are at one end of a scale, at point 1. Others feel that all medical expenses should be paid by individuals through private insurance plans like Blue Cross or other company paid plans. Suppose these people are at the other end, at point 7.",
+    "answer": "private healthcare,"
+  },
+  "V201255": {
+    "title": "PRE: 7PT SCALE GUARANTEED JOB-INCOME SCALE: SELF-PLACEMENT",
+    "question": "Some people feel the government in Washington should see to it that every person has a job and a good standard of living. Suppose these people are at one end of a scale, at point 1. Others think the government should just let each person get ahead on their own. Suppose these people are at the other end, at point 7.",
+    "answer": "govt shouldn't provide guaranteed jobs & ubi,"
+  },
+  "V201258": {
+    "title": "PRE: 7PT SCALE GOV ASSISTANCE TO BLACKS SCALE: SELF-PLACEMENT",
+    "question": "Some people feel that the government in Washington should make every effort to improve the social and economic position of blacks. Suppose these people are at one end of a scale, at point 1. Others feel that the government should not make any special effort to help blacks because they should help themselves. Suppose these people are at the other end, at point 7.",
+    "answer": "govt shouldnt help black people,"
+  },
+  "V201262": {
+    "title": "PRE: 7PT SCALE ENVIRONMENT-BUSINESS TRADEOFF: SELF-PLACEMENT",
+    "question": "Some people think we need much tougher government regulations on business in order to protect the environment. Suppose these people are at one end of a scale, at point 1. Others think that current regulations to protect the environment are already too much of a burden on business. Suppose these people are at the other end, at point 7.",
+    "answer": "govt shouldn't protect environment,"
+  },
+  "V201302x": {
+    "title": "PRE: FEDERAL BUDGET SPENDING: SOCIAL SECURITY",
+    "question": "Should federal spending on Social Security be increased, decreased, or kept the same?",
+    "answer": "decrease social security spending,"
+  },
+  "V201305x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: PUBLIC SCHOOLS",
+    "question": "Should federal spending on public schools be increased, decreased, or kept the same?",
+    "answer": "decrease public school spending,"
+  },
+  "V201308x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: TIGHTENING BORDER SECURITY",
+    "question": "Should federal spending on tightening border security to prevent illegal immigration be increased, decreased, or kept the same?",
+    "answer": "decrease border security spending,"
+  },
+  "V201311x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: DEALING WITH CRIME",
+    "question": "Should federal spending on dealing with crime be increased, decreased, or kept the same?",
+    "answer": "decrease crime prevention spending,"
+  },
+  "V201314x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: WELFARE PROGRAMS",
+    "question": "Should federal spending on welfare programs be increased, decreased, or kept the same?",
+    "answer": "decrease welfare spending,"
+  },
+  "V201317x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: BUILDING AND REPAIRING HIGHWAYS",
+    "question": "Should federal spending on building and repairing highways be increased, decreased, or kept the same?",
+    "answer": "decrease highway spending,"
+  },
+  "V201320x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: AID TO THE POOR",
+    "question": "Should federal spending on aid to the poor be increased, decreased, or kept the same?",
+    "answer": "decrease poor aid spending,"
+  },
+  "V201323x": {
+    "title": "PRE: SUMMARY: FEDERAL BUDGET SPENDING: PROTECTING THE ENVIRONMENT",
+    "question": "Should federal spending on protecting the environment be increased, decreased, or kept the same?",
+    "answer": "decrease environment spending,"
+  },
+  "V201336": {
+    "title": "RE: STD ABORTION: SELF-PLACEMENT",
+    "question": "1. By law, abortion should never be permitted 2. The law should permit abortion only in case of rape, incest, or when the woman’s life is in danger 3. The law should permit abortion other than for rape/incest/danger to woman but only after need clearly established 4. By law, a woman should always be able to obtain an abortion as a matter of personal choice",
+    "answer": "abortion always allowed,"
+  },
+  "V201345x": {
+    "title": "PRE: SUMMARY: R FAVOR/OPPOSE DEATH PENALTY",
+    "question": "Do you favor or oppose the death penalty for persons convicted of murder?",
+    "answer": "no death penalty,"
+  },
+  "V201349x": {
+    "title": "PRE: SUMMARY: COUNTRY WOULD BE BETTER OFF IF WE JUST STAYED HOME",
+    "question": "‘This country would be better off if we just stayed home and did not concern ourselves with problems in other parts of the world.’",
+    "answer": "us should not stay home,"
+  },
+  "V201350": {
+    "title": "PRE: FORCE TO SOLVE INTERNATIONAL PROBLEMS",
+    "question": "How willing should the United States be to use military force to solve international problems?",
+    "answer": "us shouldnt use force internationally,"
+  },
+  "V201356x": {
+    "title": "PRE: SUMMARY: FAVOR/OPPOSE VOTE BY MAIL",
+    "question": "Do you favor, oppose, or neither favor nor oppose conducting all elections by mail, instead of people voting in-person?",
+    "answer": "vote in person,"
+  },
+  "V201359x": {
+    "title": "PRE: SUMMARY: FAVOR/OPPOSE REQUIRING ID WHEN VOTING",
+    "question": "Do you favor, oppose, or neither favor nor oppose requiring all people to show a government issued photo ID when they vote?",
+    "answer": "no voter id laws,"
+  },
+  "V201362x": {
+    "title": "PRE: SUMMARY: FAVOR/OPPOSE ALLOWING FELONS TO VOTE",
+    "question": "Do you favor, oppose, or neither favor nor oppose allowing convicted felons to vote once they complete their sentence?",
+    "answer": "ex felons should not vote,"
+  },
+  "V201366": {
+    "title": "PRE: HOW IMPORTANT THAT NEWS ORGANIZATIONS FREE TO CRITICIZE",
+    "question": "For the next few items, we would like to know how important you think each one is to the United States maintaining a strong democracy. First, how important is it that news organizations are free to criticize political leaders?",
+    "answer": "important that news can criticize politicians,"
+  },
+  "V201367": {
+    "title": "PRE: HOW IMPORTANT BRANCHES OF GOVERNMENT KEEP ONE ANOTHER FROM TOO MUCH POWER",
+    "question": "How important is it that the executive, legislative, and judicial branches of government keep one another from having too much power?",
+    "answer": "checks and balances important,"
+  },
+  "V201368": {
+    "title": "PRE: HOW IMPORTANT ELECTED OFFICIALS FACE SERIOUS CONSEQUENCES FOR MISCONDUCT",
+    "question": "How important is it that elected officials face serious consequences if they engage in misconduct?",
+    "answer": "important elected officials face consequences for misconduct,"
+  },
+  "V201369": {
+    "title": "PRE: HOW IMPORTANT THAT PEOPLE AGREE ON BASIC FACTS",
+    "question": "How important is it that people agree on basic facts even if they disagree politically?",
+    "answer": "important people agree on basic facts,"
+  },
+  "V201372x": {
+    "title": "PRE: SUMMARY: HELPFUL/HARMFUL IF PRES DIDN’T HAVE TO WORRY ABOUT CONGRESS/COURTS",
+    "question": "Would it be helpful, harmful, or neither helpful nor harmful if U.S. presidents could work on the country’s problems without paying attention to what Congress and the courts say?",
+    "answer": "bad if us president could bypass courts/congress,"
+  },
+  "V201375x": {
+    "title": "PRE: SUMMARY: FAVOR OR OPPOSE RESTRICTING JOURNALIST ACCESS",
+    "question": "Do you favor, oppose, or neither favor nor oppose elected officials restricting journalists’ access to information about government decision-making?",
+    "answer": "do not restrict journalist access to govt info,"
+  },
+  "V201376": {
+    "title": "PRE: HOW CONCERNED GOVERNMENT MIGHT UNDERMINE MEDIA",
+    "question": "How concerned are you that some people in the government today might want to undermine the news media’s ability to serve as a check on governmental power?",
+    "answer": "concerned govt want to undermine media,"
+  },
+  "V201377": {
+    "title": "PRE: HOW MUCH TRUST IN NEWS MEDIA",
+    "question": "In general, how much trust and confidence do you have in the news media when it comes to reporting the news fully, accurately, and fairly?",
+    "answer": "confident in news media,"
+  },
+  "V201378": {
+    "title": "PRE: APPROPRIATE/INAPPROPRIATE PRES ASK FOREIGN COUNTRIES TO INVESTIGATE RIVALS",
+    "question": "In general, how appropriate or inappropriate is it for the president of the United States to ask leaders of foreign countries to investigate political rivals?",
+    "answer": "pres shouldnt ask foreign countries to investigate rivals,"
+  },
+  "V201379": {
+    "title": "PRE: PREFER GOVERNMENT OFFICIAL WHO COMPROMISES OR STICKS TO PRINCIPLES",
+    "question": "Would you prefer a government official who compromises to get things done, or who sticks to their principles no matter what?",
+    "answer": "stick to principles and not compromise,"
+  },
+  "V201386x": {
+    "title": "PRE: SUMMARY: FAVOR OR OPPOSE HOUSE IMPEACHMENT DECISION",
+    "question": "Do you favor, oppose, or neither favor nor oppose the U.S. House of Representatives’ decision in December of last year to impeach President Trump?",
+    "answer": "against trump impeachment house,"
+  },
+  "V201389x": {
+    "title": "PRE: SUMMARY: FAVOR OR OPPOSE SENATE ACQUITTAL DECISION",
+    "question": "Do you favor, oppose, or neither favor nor oppose the U.S. Senate’s decision in February to acquit President Trump of the impeachment charges and thus let him remain in office?",
+    "answer": "against trump impeachment senate,"
+  },
+  "V201392x": {
+    "title": "PRE: SUMMARY: FEDERAL GOVERNMENT RESPONSE TO COVID-19",
+    "question": "Do you think the federal government’s response to the COVID-19 outbreak earlier this year was too quick, too slow, or aboutright?",
+    "answer": "covid response too slow,"
+  },
+  "V201405x": {
+    "title": "PRE: SUMMARY: REQUIRE EMPLOYERS TO OFFER PAID LEAVE TO PARENTS OF NEW CHILDREN",
+    "question": "Do you favor, oppose, or neither favor nor oppose requiring employers to offer paid leave to parents of new children?",
+    "answer": "no paid parental leave,"
+  },
+  "V201408x": {
+    "title": "PRE: SUMMARY: SERVICES TO SAME SEX COUPLES",
+    "question": "Do you think business owners who provide wedding-related services should be allowed to refuse services to same-sex couples if same-sex marriage violates their religious beliefs, or do you think business owners should be required to provide services regardless of a couple’s sexual orientation?",
+    "answer": "business should provide services to same sex couples,"
+  },
+  "V201411x": {
+    "title": "PRE: SUMMARY: TRANSGENDER POLICY",
+    "question": "Should transgender people - that is, people who identify themselves as the sex or gender different from the one they were born as - have to use the bathrooms of the gender they were born as, or should they be allowed to use the bathrooms of their identified gender?",
+    "answer": "against trans bathroom bills,"
+  },
+  "V201414x": {
+    "title": "PRE: SUMMARY: FAVOR/OPPOSE LAWS PROTECT GAYS LESBIANS AGAINST JOB DISCRIMINATION",
+    "question": "Do you favor or oppose laws to protect gays and lesbians against job discrimination?",
+    "answer": "oppose gay antidiscrimiation law,"
+  },
+  "V201415": {
+    "title": "PRE: SHOULD GAY AND LESBIAN COUPLES BE ALLOWED TO ADOPT",
+    "question": "Do you think gay or lesbian couples should be legally permitted to adopt children?",
+    "answer": "gay people shouldnt be allowed to adopt children,"
+  },
+  "V201416": {
+    "title": "PRE: R POSITION ON GAY MARRIAGE",
+    "question": "Should gay people be allowed to get married?",
+    "answer": "no gay marriage,"
+  },
+  "V201417": {
+    "title": "PRE: US GOVERNMENT POLICY TOWARD UNAUTHORIZED IMMIGRANTS",
+    "question": "How should US treat undocumented immigrants?",
+    "answer": "allow undocumented immigrants to become citizens,"
+  },
+  "V201420x": {
+    "title": "PRE: SUMMARY: FAVOR OR OPPOSE ENDING BIRTHRIGHT CITIZENSHIP",
+    "question": "Some people have proposed that the U.S. Constitution should be changed so that the children of unauthorized immigrants do not automatically get citizenship if they are born in this country. Do you favor, oppose, or neither favor nor oppose this proposal?",
+    "answer": "don't end birthright citizenship,"
+  },
+  "V201423x": {
+    "title": "PRE: SUMMARY: SHOULD CHILDREN BROUGHT ILLEGALLY BE SENT BACK OR ALLOWED TO STAY",
+    "question": "What should happen to immigrants who were brought to the U.S. illegally as children and have lived here for at least 10 years and graduated high school here? Should they be sent back where they came from, or should they be allowed to live and work in the United States?",
+    "answer": "children of undocumented shouldn't be deported,"
+  },
+  "V201426x": {
+    "title": "PRE: SUMMARY: FAVOR OR OPPOSE BUILDING A WALL ON BORDER WITH MEXICO",
+    "question": "Do you favor, oppose, or neither favor nor oppose building a wall on the U.S. border with Mexico?",
+    "answer": "oppose border wall,"
+  },
+  "V201429": {
+    "title": "PRE: BEST WAY TO DEAL WITH URBAN UNREST",
+    "question": "What is the best way to deal with the problem of urban unrest and rioting?",
+    "answer": "use force to prevent urban unrest,"
+  },
+  "V201626": {
+    "title": "PRE: NEED TO BE MORE SENSITIVE TALKING OR PEOPLE TOO EASILY OFFENDED",
+    "question": "Some people think that the way people talk needs to change with the times to be more sensitive to people from different backgrounds. Others think that this has already gone too far and many people are just too easily offended. Which is closer to your opinion?",
+    "answer": "people too easily offended"
+  },
+  "V201639": {
+    "title": "PRE: WOMEN INTERPRET INNOCENT REMARKS AS SEXIST",
+    "question": "Do many women interpret innocent remarks or acts as being sexist?",
+    "answer": "most women don't interpret innocent remarks or acts as being sexist."
+  },
+  "V201640": {
+    "title": "PRE: WOMEN SEEK TO GAIN POWER BY GETTING CONTROL OVER MEN",
+    "question": "do women want to gain power by controlling men",
+    "answer": "women do not seek to gain power by controlling men"
+  },
+  "V202212": {
+    "title": "POST: [STD] PUBLIC OFFICIALS DON’T CARE WHAT PEOPLE THINK",
+    "question": "do public officials don’t care much what people like you think?",
+    "answer": "public officials care what i think"
+  },
+  "V202213": {
+    "title": "POST: [STD] HAVE NO SAY ABOUT WHAT GOVERMENT DOES",
+    "question": "do people like you have say in what the government does?",
+    "answer": "i have no say in govt"
+  },
+  "V202231x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE NEW LIMITS ON IMPORTS",
+    "question": "Some people have suggested placing new limits on foreign imports in order to protect American jobs. Others say that such limits would raise consumer prices and hurt American exports. Do you favor or oppose placing new limits on imports?",
+    "answer": "no new limits on imports"
+  },
+  "V202232": {
+    "title": "POST: WHAT SHOULD IMMIGRATION LEVELS BE",
+    "question": "Do you think the number of immigrants from foreign countries who are permitted to come to the United States to live should be increased a lot, increased a little, left the same as it is now, decreased a little, or decreased a lot?",
+    "answer": "less immigrants"
+  },
+  "V202236x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE ALLOWING REFUGEES TO COME TO US",
+    "question": "Do you favor, oppose, or neither favor nor oppose allowing refugees who are fleeing war, persecution, or natural disasters in other countries to come to live in the U.S.?",
+    "answer": "oppose refugees"
+  },
+  "V202242x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE PROVIDING PATH TO CITIZESHIP",
+    "question": "Do you favor, oppose, or neither favor nor oppose providing a path to citizenship for unauthorized immigrants who obey the law, pay a fine, and pass security checks?",
+    "answer": "no path to citizenship for undocumented"
+  },
+  "V202245x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE RETURNING UNAUTHORIZE IMMIGRANTS TO NATIVE COUNTRY",
+    "question": "Do you favor, oppose, or neither favor nor oppose returning all unauthorized immigrants to their native countries?",
+    "answer": "oppose returning undocumented to birth countries"
+  },
+  "V202248x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE SEPARATING CHILDREN OF DETAINED IMMIGRANTS",
+    "question": "Do you favor, oppose, or neither favor nor oppose separating the children of detained immigrants, rather than keeping them with their parents in adult detention centers?",
+    "answer": "dont separate undocumented kids from families"
+  },
+  "V202252x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE PREFERENTIAL HIRING/PROMOTION OF BLACKS",
+    "question": "are you for or against preferential hiring and promotion of blacks?",
+    "answer": "no preferential hiring/promotion of blacks"
+  },
+  "V202255x": {
+    "title": "POST: SUMMARY: LESS OR MORE GOVERNMENT",
+    "question": "less government better or more that govt needs to do",
+    "answer": "more govt better"
+  },
+  "V202259x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE GOVERNMENT TRYING TO REDUCE INCOME INEQUALITY",
+    "question": "Would it be good for society to have more government regulation, about the same amount of regulation as there is now, or less government regulation?",
+    "answer": "govt shouldnt reduce income inequality"
+  },
+  "V202260": {
+    "title": "POST: SOCIETY SHOULD MAKE SURE EVERYONE HAS EQUAL OPPORTUNITY",
+    "question": "Should our society do whatever is necessary to make sure that everyone has an equal opportunity to succeed?",
+    "answer": "shouldnt make sure everyone has equal opportunity"
+  },
+  "V202261": {
+    "title": "POST: WE’D BE BETTER OFF IF WORRIED LESS ABOUT EQUALITY",
+    "question": "should we be more worried about equality?",
+    "answer": "should worry more about equality"
+  },
+  "V202262": {
+    "title": "POST: NOT A BIG PROBLEM IF SOME HAVE MORE CHANCE IN LIFE",
+    "question": "Is it a problem if some have more chances in life?",
+    "answer": "problem if some have more chance in life"
+  },
+  "V202263": {
+    "title": "POST: IF PEOPLE WERE TREATED MORE FAIRLY WE WOULD HAVE FEWER PROBLEMS",
+    "question": "Would we have fewer problems if people were treated more fairly?",
+    "answer": "wouldnt have fewer problems if people treated more equally"
+  },
+  "V202264": {
+    "title": "POST: THE WORLD IS CHANGING & WE SHOULD ADJUST VIEW OF MORAL BEHAVIOR",
+    "question": "Should we change our views of moral behavior to fit the changing world?",
+    "answer": "shouldn't adjust morality to changing world"
+  },
+  "V202265": {
+    "title": "POST: FEWER PROBLEMS IF THERE WAS MORE EMPHASIS ON TRADITIONAL FAMILY VALUES",
+    "question": "Would we have fewer problems if more focus on traditional family ties",
+    "answer": "wouldnt have less problems if focused more on traditional family ties"
+  },
+  "V202270": {
+    "title": "POST: BETTER IF REST OF WORLD MORE LIKE AMERICA",
+    "question": "Would the world be better if people from other countries were more like Americans?",
+    "answer": "wouldnt be better if others more like americans"
+  },
+  "V202273x": {
+    "title": "POST: SUMMARY: US BETTER OR WORSE THAN MOST OTHER COUNTRIES",
+    "question": "Is the US better or worse than other countries",
+    "answer": "US worse than other countries"
+  },
+  "V202279x": {
+    "title": "POST: SUMMARY: PEOPLE IN RURAL AREAS HAVE TOO MUCH/TOO LITTLE INFLUENCE",
+    "question": "Compared to people living in cities, do people living in small towns and rural areas have too much influence, too little influence, or about the right amount of influence on government?",
+    "answer": "rural people have too little govt influence"
+  },
+  "V202282x": {
+    "title": "POST: SUMMARY: PEOPLE IN RURAL AREAS GET TOO MUCH/TOO LITTLE RESPECT",
+    "question": "Do people living in small towns and rural areas get too much respect, too little respect, or about the right amount of respect from people living in cities?",
+    "answer": "rural people get too little respect"
+  },
+  "V202290x": {
+    "title": "POST: SUMMARY: BETTER/WORSE IF MAN WORKS AND WOMAN TAKES CARE OF HOME",
+    "question": "Is it better or worse if men work and women take care of the home",
+    "answer": "worse if traditional gender roles"
+  },
+  "V202291": {
+    "title": "POST: DO WOMEN DEMANDING EQUALITY SEEK SPECIAL FAVORS",
+    "question": "When women demand equality these days, how often are they actually seeking special favors?",
+    "answer": "women asking for equality dont want special favors"
+  },
+  "V202292": {
+    "title": "POST: DO WOMEN COMPLAINING ABOUT DISCRIMINATION CAUSE MORE PROBLEMS",
+    "question": "When women complain about discrimination, how often do they cause more problems than they solve?",
+    "answer": "women complaining about discrimination dont cause more problems"
+  },
+  "V202300": {
+    "title": "POST: AGREE/DISAGREE: BLACKS SHOULD WORK THEIR WAY UP WITHOUT SPECIAL FAVORS",
+    "question": "should blacks work their way up without special favors",
+    "answer": "disagree w 'blacks should work their way up without special favors'"
+  },
+  "V202302": {
+    "title": "POST: AGREE/DISAGREE: BLACKS HAVE GOTTEN LESS THAN THEY DESERVE",
+    "question": "Over the past few years, blacks have gotten less than they deserve",
+    "answer": "blacks havent gotten less than they deserve"
+  },
+  "V202303": {
+    "title": "POST: AGREE/DISAGREE: IF BLACKS TRIED HARDER THEY’D BE AS WELL OFF AS WHITES",
+    "question": "Would blacks be as well off as whites if they worked hard enough",
+    "answer": "blacks dont suffer prejudice because of lack of hard work"
+  },
+  "V202304": {
+    "title": "POST: OUR POLITICAL SYSTEM ONLY WORKS FOR INSIDERS WITH MONEY AND POWER",
+    "question": "Does the political system only work for insiders with money and power?",
+    "answer": "politics only works for powerful"
+  },
+  "V202305": {
+    "title": "POST: BECAUSE OF RICH AND POWERFUL IT’S DIFFICULT FOR THE REST TO GET AHEAD",
+    "question": "Do rich and powerful make it harder for everyone else to get ahead?",
+    "answer": "powerful make it harder for others to get ahead"
+  },
+  "V202308x": {
+    "title": "POST: SUMMARY: TRUST ORDINARY PEOPLE/EXPERTS FOR PUBLIC POLICY",
+    "question": "When it comes to public policy decisions, whom do you tend to trust more: ordinary people, experts, or trust both the same?",
+    "answer": "trust experts more than ordinary people"
+  },
+  "V202309": {
+    "title": "POST: HOW MUCH DO PEOPLE NEED HELP FROM EXPERTS TO UNDERSTAND SCIENCE",
+    "question": "How much do ordinary people need the help of experts to understand complicated things like science and health?",
+    "answer": "people need help from experts to understand science"
+  },
+  "V202310": {
+    "title": "POST: HOW IMPORTANT SHOULD SCIENCE BE FOR DECISIONS ABOUT COVID-19",
+    "question": "In general, how important should science be for making government decisions about COVID-19?",
+    "answer": "science important for covid decisions"
+  },
+  "V202311": {
+    "title": "POST: BUSINESS AND POLITICS CONTROLLED BY FEW POWERFUL PEOPLE",
+    "question": "Are business and politics controlled by a few powerful people?",
+    "answer": "business/politics controlled by powerful few"
+  },
+  "V202312": {
+    "title": "POST: MUCH OF WHAT PEOPLE HEAR IN SCHOOLS AND MEDIA ARE LIES BY THOSE IN POWER",
+    "question": "Is much of the info in school and media lies designed to benefit powerful?",
+    "answer": "schools/media lie to benefit powerful few"
+  },
+  "V202317": {
+    "title": "POST: HOW MUCH OPPORTUNITY IN AMERICA FOR AVERAGE PERSON TO GET AHEAD",
+    "question": "How much opportunity is there in America today for the average person to get ahead?",
+    "answer": "no opportunity for average person to get ahead"
+  },
+  "V202321": {
+    "title": "POST: IMPORTANCE OF REDUCING DEFICIT",
+    "question": "How important is it to reduce the deficit?",
+    "answer": "reducing defecit not important"
+  },
+  "V202328x": {
+    "title": "POST: SUMMARY: APPROVE/DISAPPROVE AFFORDABLE CARE ACT",
+    "question": "Do you approve, disapprove, or neither approve nor disapprove of the Affordable Care Act of 2010, sometimes called Obamacare?",
+    "answer": "disapprove obamacare"
+  },
+  "V202331x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE REQUIRING VACCINES IN SCHOOLS",
+    "question": "Do you favor, oppose, or neither favor nor oppose requiring children to be vaccinated in order to attend public schools?",
+    "answer": "disapprove vaccines"
+  },
+  "V202336x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE INCREASED REGULATION ON GREENHOUSE EMISSIONS",
+    "question": "Do you favor, oppose, or neither favor nor oppose increased government regulation on businesses that produce a great deal of greenhouse emissions linked to climate change?",
+    "answer": "oppose climate change regulation"
+  },
+  "V202341x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE BACKGROUND CHECKS FOR GUN PUCHASES",
+    "question": "Do you favor, oppose, or neither favor nor oppose requiring background checks for gun purchases at gun shows or other private sales?",
+    "answer": "oppose gun purchase background checks"
+  },
+  "V202344x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE BANNING ‘ASSAULT-STYLE’ RIFLES",
+    "question": "Do you favor, oppose, or neither favor nor oppose banning the sale of semi-automatic “assault-style” rifles?",
+    "answer": "oppose assault weapons ban"
+  },
+  "V202347x": {
+    "title": "POST: FAVOR/OPPOSE GOVERNMENT BUY BACK OF ‘ASSAULT-STYLE’ RIFLES",
+    "question": "Do you favor, oppose, or neither favor nor oppose a mandatory program where the government would buy back semi-automatic assault-style rifles from citizens who currently own them?",
+    "answer": "oppose assault weapon buyback"
+  },
+  "V202350x": {
+    "title": "POST: SUMMARY SHOULD FEDERAL GOVT DO MORE/LESS ABOUT OPIOID DRUG ADDICTION",
+    "question": "Do you think the federal government should be doing more about the opioid drug addiction issue, should be doing less, or is it currently doing the right amount?",
+    "answer": "govt should do less abt opioid crisis"
+  },
+  "V202351": {
+    "title": "POST: HOW OFTEN DO POLICE OFFICERS USE MORE FORCE THAN NECESSARY",
+    "question": "How often do you think police officers use more force than is necessary?",
+    "answer": "police overuse force"
+  },
+  "V202364x": {
+    "title": "POST: SUMMARY: INCREASING TRADE GOOD/BAD FOR INTERNATIONAL RELATIONSHIPS",
+    "question": "Is increasing the amount of international trade good, bad, or neither good nor bad for our relationships with other countries?",
+    "answer": "int trade increase bad"
+  },
+  "V202373x": {
+    "title": "POST: SUMMARY: INCREASING DIVERSITY MADE US BETTER/WORSE PLACE TO LIVE",
+    "question": "Does the increasing number of people of many different races and ethnic groups in the United States make this country a better place to live, a worse place to live, or does it make no difference?",
+    "answer": "diversity makes US worse"
+  },
+  "V202376x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE FEDERAL PROGRAM GIVING CITIZENS $12K/YEAR",
+    "question": "Do you favor, oppose, or neither favor nor oppose establishing a federal program that gives all citizens $12,000 per year, provided they meet certain conditions? This program would be paid for with higher taxes.",
+    "answer": "against $12k/year ubi"
+  },
+  "V202377": {
+    "title": "POST: SHOULD THE MINIMUM WAGE BE RAISED, KEPT THE SAME, OR LOWERED",
+    "question": "Should the federal minimum wage be raised, kept the same, lowered but not eliminated, or eliminated altogether?",
+    "answer": "decrease minimum wage"
+  },
+  "V202380x": {
+    "title": "POST: SUMMARY: INCREASE/DECREASE GOVERNMENT SPENDING TO HELP PAY FOR HEALTH CARE",
+    "question": "Do you favor an increase, decrease, or no change in government spending to help people pay for health insurance when they can’t pay for it all themselves?",
+    "answer": "decrease govt healthcare spending"
+  },
+  "V202387x": {
+    "title": "POST: SUMMARY: ATTENTION TO SEXUAL HARRASSMENT AS GONE TOO FAR/NOT FAR ENOUGH",
+    "question": "Do you think attention to sexual harassment has gone too far, has not gone far enough, or has been about right?",
+    "answer": "too little attn. to sexual harassement"
+  },
+  "V202390x": {
+    "title": "POST: SUMMARY: FAVOR/OPPOSE TRANSENDER PEOPLE SERVE IN MILITARY",
+    "question": "Do you favor, oppose, or neither favor nor oppose allowing transgender people to serve in the United States Armed Forces?",
+    "answer": "against trans military service"
+  },
+  "V202400": {
+    "title": "POST: HOW MUCH IS CHINA A THREAT TO THE UNITED STATES",
+    "question": "How much is China a threat to the United States?",
+    "answer": "China threat to US"
+  },
+  "V202401": {
+    "title": "POST: HOW MUCH IS RUSSIA A THREAT TO THE UNITED STATES",
+    "question": "How much is Russia a threat to the United States?",
+    "answer": "Russia threat to US"
+  },
+  "V202402": {
+    "title": "POST: HOW MUCH IS MEXICO A THREAT TO THE UNITED STATES",
+    "question": "How much is Mexico a threat to the United States?",
+    "answer": "Mexico threat to US"
+  },
+  "V202403": {
+    "title": "POST: HOW MUCH IS IRAN A THREAT TO THE UNITED STATES",
+    "question": "How much is Iran a threat to the United States?",
+    "answer": "Iran threat to US"
+  },
+  "V202404": {
+    "title": "POST: HOW MUCH IS JAPAN A THREAT TO THE UNITED STATES",
+    "question": "How much is Japan a threat to the United States?",
+    "answer": "Japan threat to US"
+  },
+  "V202405": {
+    "title": "POST: HOW MUCH IS GERMANY A THREAT TO THE UNITED STATES",
+    "question": "How much is Germany a threat to the United States?",
+    "answer": "Germany threat to US"
+  },
+  "V202409": {
+    "title": "POST: CSES5-Q04A: ATTITUDES ABOUT ELITES: COMPROMISE IN POLITICS IS SELLING OUT",
+    "question": "Do you agree with the following statement: 'What people call compromise in politics is really just selling out on one’s principles.' ",
+    "answer": "compromise in politics not selling out on principles."
+  },
+  "V202410": {
+    "title": "POST: CSES5-Q04B: ATTITUDES ABOUT ELITES: POLITICIANS DO NOT CARE ABOUT PEOPLE",
+    "question": "Do you agree with the following statement: 'Most politicians do not care about the people.' ",
+    "answer": "politicians care about people"
+  },
+  "V202411": {
+    "title": "POST: CSES5-Q04C: ATTITUDES ABOUT ELITES: MOST POLITICIANS ARE TRUSTWORTHY",
+    "question": "Do you agree with the following statement: 'Most politicians are trustworthy.' ",
+    "answer": "politicians not trustworthy"
+  },
+  "V202412": {
+    "title": "POST: CSES5-Q04D: ATTITUDES ABOUT ELITES: POLITICIANS ARE MAIN PROBLEM IN US",
+    "question": "Do you agree with the following statement: 'Politicians are the main problem in the United States.' ",
+    "answer": "politicians not main problem in US"
+  },
+  "V202413": {
+    "title": "POST: CSES5-Q04E: ATTITUDES ABOUT ELITES: STRONG LEADER IN GOVERNMENT IS GOOD",
+    "question": "Do you agree with the following statement: 'Having a strong leader in government is good for the United States even if the leader bends the rules to get things done.' ",
+    "answer": "strong leader that bends rule bad for US"
+  },
+  "V202414": {
+    "title": "POST: CSES5-Q04F: ATTITUDES ABOUT ELITES: PEOPLE SHOULD MAKE POLICY DECISIONS",
+    "question": "Do you agree with the following statement: 'The people, and not politicians, should make our most important policy decisions.' ",
+    "answer": "politicans should make policy instead of people"
+  },
+  "V202415": {
+    "title": "POST: CSES5-Q04G: ATTITUDES ABOUT ELITES: POLITICIANS ONLY CARE ABOUT THE RICH",
+    "question": "Do you agree with the following statement: 'Most politicians care only about the interests of the rich and powerful.' ",
+    "answer": "politicians don't only care about rich/powerful"
+  },
+  "V202416": {
+    "title": "POST: CSES5-Q05A: OUT-GROUP ATTITUDES: MINORITIES SHOULD ADAPT",
+    "question": "Do you agree with the following statement: 'Minorities should adapt to the customs and traditions of the United States.' ",
+    "answer": "minorities shouldn't adapt to customs of US"
+  },
+  "V202417": {
+    "title": "POST: CSES5-Q05B: OUT-GROUP ATTITUDES: WILL OF MAJORITY SHOULD ALWAYS PREVAIL",
+    "question": "Do you agree with the following statement: 'The will of the majority should always prevail, even over the rights of minorities.' ",
+    "answer": "will of majority shouldn't prevail over minority rights'"
+  }
+}
