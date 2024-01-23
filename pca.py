@@ -2,10 +2,12 @@ from sklearn.decomposition import PCA
 import numpy as np
 import pandas as pd
 
+# local path, censored for privacy in github repo
 path_to_repo = "C:\\Users\\abhil\\Documents\\Election Stats\\Political Spectrum\\refactor\\"
+# replace with your current path
 
 df = pd.read_csv(path_to_repo +
-                 "ideo.csv")
+                 "ideo.csv")  # import data
 
 weights = np.array(df['weights'])
 
@@ -34,9 +36,11 @@ def weighted_PCA(X, num_components, weights):
     return X_reduced, eigenvector_subset, explained_variance
 
 
-num_components = 10
+num_components = 5
 x_reduced, loadings, explained_variance = weighted_PCA(
     data, num_components, weights)
+
+print(np.sum(explained_variance))
 
 question_dataframe = {"Question": df.columns[1:-1]}
 
@@ -46,4 +50,4 @@ for i in range(num_components):
 
 questions = pd.DataFrame(question_dataframe)
 
-questions.to_csv(path_to_repo + 'questions.csv')
+questions.to_csv(path_to_repo + 'questions.csv')  # export data

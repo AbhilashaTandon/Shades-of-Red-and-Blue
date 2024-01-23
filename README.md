@@ -2,21 +2,16 @@
 
 ## Intro
 
-A "political spectrum" is visual way of representing different political ideologies in a grid where each point in the grid corresponds to a unique viewpoint. Political spectra have different "axes" that represent midpoints between two extremes, and the positions on these axes can be used like a coordinate system to uniquely define a position. Political groups, parties, candidates, along with everyday citizens, are defined based on their positions on these axes. A simple left-right spectrum is common conceptually across the world (though likely more common in the US), but alternatives do exist. The Nolan Chart adds an orthogonal axis representing thoughts on government control: with libertarianism advocating for little and totalitarianism advocating for more.[1]
+A "political spectrum" serves as a visual representation of diverse political ideologies, using a grid where each point corresponds to a unique viewpoint. This grid consists of different "axes," representing midpoints between opposing extremes. Positions on these axes function as coordinates, uniquely defining a political stance. Political entities such as groups, parties, candidates, and everyday citizens are characterized based on their positions on these axes. While a simple left-right spectrum is a common conceptualization globally, alternatives, such as the Nolan Chart, introduce an orthogonal axis representing attitudes toward government control, ranging from libertarianism to totalitarianism[1].
 
-Sites like https://www.politicalcompass.org seek to make a simple way to determine where a test taker falls on this spectrum.
+Websites like <https://www.politicalcompass.org> aim to provide a straightforward way for individuals to determine their placement on this spectrum. This analysis of political ideology has gained traction in popular internet culture, as evident in places like <https://www.reddit.com/r/PoliticalCompassMemes/>. However, the subjective nature of defining axes and political concepts like "left," "right," "authoritarian," or "libertarian" leads to varied interpretations. This project addresses this issue by seeking a more objective method of constructing a political spectrum.
 
-However, both the choice of axes and how these are defined are relative, different people have different understandings of concepts like "left", "right", "authoritarian" or "libertarian". Thus this project seeks to find a more objective way of creating a political spectrum.
-
-However in popular internet culture, the analysis of the 
-https://knowyourmeme.com/memes/political-compass
-
-https://www.reddit.com/r/PoliticalCompassMemes/
-
+Using techniques from machine learning along with data from political surveys, we can construct a version of this chart from data instead of relying on intuition. This is done by taking 
 
 
 [1]: https://polquiz.com/
 
 ## Methodology
 
-Data is taken from the American National Election Survey's 2020 
+Data is taken from the American National Election Survey's 2020 survey, which consists of a comprehensive political questionnaire of subjects before and after the 2020 US Presidential election. Features relevant to political views, which included direct questions on political policy as well as demographic information. Ideological questions were then put through a PCA model using weights given by the dataset. 
+
