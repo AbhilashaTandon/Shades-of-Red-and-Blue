@@ -57,9 +57,10 @@ def export_medians(medians, n_components, file_name, explained_variance):
     df.to_csv(path_to_repo + file_name + '.csv')
 
 
-def filter(filter_category, filter_group, data, weights):
-    filtered = np.extract(np.array(
-        filter_category == filter_group), data)
+def filter_data(filter_category, filter_group, data, weights):
+
+    indices = np.where(filter_category == filter_group)[0]
+    filtered = np.take(data, indices, axis=0)
     filtered_weights = np.extract(np.array(
         filter_category == filter_group), weights)
     return filtered, filtered_weights
@@ -70,6 +71,15 @@ def weighted_median(values, weights):
     halfway = np.sum(weights)/2
     median_idx = (np.abs(cumsums - halfway)).argmin()
     return sorted(values)[median_idx]
+
+
+def weighted_mean(values, weights):
+    return np.average(values, weights=weights, axis=0)
+
+
+def weighted_stdev(values, weights):
+    means = weighted_mean(values, weights)
+    return np.sqrt(np.average((values-means)**2, weights=weights, axis=0))
 
 
 def demo_medians(demo_category, demo_labels, data, weights):
@@ -86,12 +96,46 @@ def demo_medians(demo_category, demo_labels, data, weights):
     for label in all_labels:
         median_vals = np.zeros((num_cols))
         for j in range(num_cols):
-            filtered_data, filtered_weights = filter(
+            filtered_data, filtered_weights = filter_data(
                 demo_labels, label, data[:, j], weights)
             median_vals[j] = weighted_median(filtered_data, filtered_weights)
         medians[str(demo_category) + ': ' + str(label)] = list(median_vals)
 
     return medians
+
+
+def show_histograms(data, num_plots, weights):
+    num_samples = data.shape[0]
+    num_components = data.shape[1]
+    num_plots = min(num_plots, num_components)
+
+    means = weighted_mean(data, weights)
+    stdevs = weighted_stdev(data, weights)  # stdevs of principal components
+
+    fig, axs = plt.subplots(1, 3, sharey=True, tight_layout=True)
+
+    bins_ = int(np.sqrt(num_samples))
+
+    for x in range(num_plots):
+        series = data[:, x]
+        axs[x].hist(series, bins=bins_, weights=weights, alpha=.7)
+
+        normal_dist_x = np.linspace(np.min(series), np.max(series), bins_)
+        normal_dist_y = 1/(stdevs[x] * np.sqrt(2 * np.pi)) * \
+            np.exp(-.5 * ((normal_dist_x - means[x]) / stdevs[x]) ** 2)
+
+        # normalize total integral to num samples
+        # makes histogram line up w normal dist
+        normal_dist_y *= sum(weights) / sum(normal_dist_y)
+
+        axs[x].axvline(x=means[x], color='red', ls='--', label=means[x])
+
+        axs[x].plot(normal_dist_x, normal_dist_y)
+
+    for id, ax in enumerate(axs):
+        ax.set_title("PC " + str(id+1))
+
+    plt.show()
 
 
 def main():
@@ -105,8 +149,22 @@ def main():
     x_reduced, loadings, explained_variance = weighted_PCA(
         data, num_components, weights)
 
+    means = weighted_mean(x_reduced, weights=weights)
+    stdevs = weighted_stdev(x_reduced, weights=weights)
+
+    x_reduced = ((x_reduced - means)) / stdevs
+
+    num_samples = x_reduced.shape[0]
+
     export_questions_data(loadings, num_components,
                           "loadings", explained_variance)
+
+    filtered, filtered_weights = filter_data(
+        demo['PRE-POST: SUMMARY: 2020 PRESIDENTIAL VOTE'], "Joe Biden", x_reduced, weights)
+
+    print(filtered.shape)
+
+    show_histograms(filtered, 3, filtered_weights)
 
     medians = {}
 
