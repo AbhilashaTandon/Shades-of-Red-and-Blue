@@ -3,10 +3,10 @@ import numpy as np
 import pandas as pd
 import json
 
-path_to_repo = "C:\\Users\\abhil\\Documents\\Election Stats\\Political Spectrum\\refactor\\"
-# change in your implementation
+from pathlib import Path
+local_path = Path(__file__).parent
 
-data = pd.read_csv(path_to_repo +
+data = pd.read_csv(local_path /
                    "anes_timeseries_2020_csv_20220210.csv")
 
 data = data.drop(data.columns[[15, 17, 18, 19, 21, 22, 23, 25,
@@ -20,7 +20,7 @@ weights = pd.to_numeric(
 
 def read_json(filename):
     json_dict = {}
-    with open(path_to_repo + filename, encoding='utf-8') as file:
+    with open(local_path / filename, encoding='utf-8') as file:
         # do this so file will close if error
         json_dict = json.loads(file.read())
     return json_dict
@@ -109,5 +109,5 @@ demo_data = demo_data.rename(columns=demographic_vars)
 ideo_data = pd.concat([ideo_data, weights], axis=1)
 demo_data = pd.concat([demo_data, weights], axis=1)
 
-ideo_data.to_csv(path_to_repo + 'ideo.csv')
-demo_data.to_csv(path_to_repo + 'demo.csv')
+ideo_data.to_csv(local_path / 'ideo.csv')
+demo_data.to_csv(local_path / 'demo.csv')
