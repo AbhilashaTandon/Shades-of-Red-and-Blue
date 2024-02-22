@@ -1,4 +1,4 @@
-# Political-Spectrum-Analysis
+# Shades of Red and Blue
 
 An comprehensive, unbiased political quiz that uses actual data to analyze American politics and place people on a spectrum. 
 
