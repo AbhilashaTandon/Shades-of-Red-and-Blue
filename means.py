@@ -6,7 +6,7 @@ import stats
 local_path = Path(__file__).parent
 
 
-path_to_repo = "C:\\Users\\abhil\\Documents\\Election Stats\\Political Spectrum\\refactor\\"
+path_to_repo = "C:\\Dev\\Political Spectrum\\Political-Spectrum-Analysis\\"
 
 df = pd.read_csv(path_to_repo +
                  "ideo.csv")
@@ -14,18 +14,22 @@ df = pd.read_csv(path_to_repo +
 demo = pd.read_csv(path_to_repo + "demo.csv")
 
 
-def export_medians(medians, n_components):
-    medians_df = pd.DataFrame.from_dict(medians, orient='index')
+def export_means(means, n_components):
+    means_df = pd.DataFrame.from_dict(means, orient='index')
     component_labels = ["Component " + str(i)
                         for i in range(1, n_components + 1)]
     confidence_labels = ["Confidence Interval " +
                          str(i) for i in range(1, n_components + 1)]
-    column_labels = ["Category", "Group"] + [val for pair in zip(component_labels, confidence_labels)
+    var_labels = ["Variance of Comp. " + str(i)
+                  for i in range(1, n_components + 1)]
+    var_of_var_labels = ["Variance of Sample Variance of Comp." + str(i)
+                         for i in range(1, n_components + 1)]
+    column_labels = ["Category", "Group"] + [val for pair in zip(component_labels, confidence_labels, var_labels, var_of_var_labels)
                                              for val in pair]
-    medians_df.columns = column_labels
+    means_df.columns = column_labels
     # first row is explained variance
 
-    return medians_df
+    return means_df
 
 
 def filter_data(filter_category, filter_group, data, weights):
@@ -37,7 +41,7 @@ def filter_data(filter_category, filter_group, data, weights):
     return filtered, filtered_weights
 
 
-def demo_medians(demo_category, demo_labels, data, weights):
+def demo_means(demo_category, demo_labels, data, weights):
     all_labels = sorted(list(set(demo_labels)))
     num_cols = data.shape[1]
     assert (num_cols != len(demo_labels))
@@ -46,24 +50,33 @@ def demo_medians(demo_category, demo_labels, data, weights):
     # demo.shape should be (num samples, 1)
     # data.shape should be (num samples, num_cols)
 
-    medians = {}
+    means = {}
 
     for label in all_labels:
-        median_vals = np.zeros((num_cols))
+        mean_vals = np.zeros((num_cols))
         confidence_vals = np.zeros((num_cols))
+        sample_vars = np.zeros((num_cols))
+        var_confidence_values = np.zeros((num_cols))
+
+        n = len(weights)
+
         for j in range(num_cols):
             filtered_data, filtered_weights = filter_data(
                 demo_labels, label, data[:, j], weights)
-            median_vals[j] = stats.weighted_median(
+            mean_vals[j] = stats.weighted_mean(
                 filtered_data, filtered_weights)
             confidence_vals[j] = 1.96 * stats.weighted_stdev(
-                filtered_data, filtered_weights) / np.sqrt(len(filtered_weights))  # 95 % confidence interval
-        row = [val for pair in zip(median_vals, confidence_vals)
+                filtered_data, filtered_weights) / np.sqrt(n)  # 95 % confidence interval
+            sample_vars[j] = stats.nth_central_moment(
+                filtered_data, filtered_weights, 2) * (n / (n - 1))  # sample var is E(x - mu)^2 / (n-1)
+            var_confidence_values[j] = 1.96 * stats.nth_central_moment(
+                filtered_data, filtered_weights, 4) - sample_vars[j] * (n-3) / (n * (n-1))
+        row = [val for pair in zip(mean_vals, confidence_vals, sample_vars, var_confidence_values)
                for val in pair]
-        medians[str(demo_category) + ': ' + str(label)
-                ] = [demo_category, label] + row
+        means[str(demo_category) + ': ' + str(label)
+              ] = [demo_category, label] + row
 
-    return medians
+    return means
 
 
 def main():
@@ -85,14 +98,16 @@ def main():
 
     num_components = data.shape[1]  # num of components in pca
 
-    medians = {}
+    print(demo.columns)
+
+    means = {}
 
     for column in demo.columns[1:-2]:  # exclude index, age, and weights
-        # add medians for each demographic variable to dictionary
-        medians |= demo_medians(column, demo[column].fillna(
+        # add means for each demographic variable to dictionary
+        means |= demo_means(column, demo[column].fillna(
             "None"), data, weights)
 
-    export_medians(medians, num_components).to_csv(local_path / "medians.csv")
+    export_means(means, num_components).to_csv(local_path / "means.csv")
 
 
 if __name__ == "__main__":

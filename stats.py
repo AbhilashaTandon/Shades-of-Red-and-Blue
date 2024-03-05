@@ -28,6 +28,13 @@ def weighted_z_score(values, weights):
     return (values - means)/stdevs
 
 
+def nth_central_moment(values, weights, n):
+    mu = weighted_mean(values, weights=weights)
+    deviations = values - mu
+    nth_moment = np.power(deviations, n)
+    return np.average(nth_moment, weights=weights)
+
+
 def percentile(values, weights):
     out = []
     for series in values.T:
