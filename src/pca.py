@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import stats
 
-local_path = Path(__file__).parent
+local_path = Path(__file__).parent.parent
 
 
 def weighted_PCA(X, num_components, weights):
@@ -91,12 +91,12 @@ def main():
     ideo = pd.DataFrame()
     demo = pd.DataFrame()
 
-    ideo_path = local_path / "ideo.csv"
+    ideo_path = local_path / "data/ideo.csv"
 
     with ideo_path.open() as f:
         ideo = pd.read_csv(f)
 
-    demo_path = local_path / "demo.csv"
+    demo_path = local_path / "data/demo.csv"
     with demo_path.open() as f:
         demo = pd.read_csv(f)
 
@@ -114,9 +114,9 @@ def main():
     # show_histograms(x_reduced, 10, weights)
 
     export_reduced(x_reduced, num_components,
-                   explained_variance).to_csv(local_path / "reduced.csv")
+                   explained_variance).to_csv(local_path / "data/reduced.csv")
     export_loadings(loadings, ideo.columns[1:-1], num_components,
-                    explained_variance).to_csv(local_path / "loadings.csv")
+                    explained_variance).to_csv(local_path / "data/loadings.csv")
 
 
 if (__name__ == "__main__"):

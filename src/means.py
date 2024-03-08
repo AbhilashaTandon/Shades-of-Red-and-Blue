@@ -3,15 +3,12 @@ import pandas as pd
 import numpy as np
 import stats
 
-local_path = Path(__file__).parent
+local_path = Path(__file__).parent.parent
 
+df = pd.read_csv(local_path /
+                 "data/ideo.csv")
 
-path_to_repo = "C:\\Dev\\Political Spectrum\\Political-Spectrum-Analysis\\"
-
-df = pd.read_csv(path_to_repo +
-                 "ideo.csv")
-
-demo = pd.read_csv(path_to_repo + "demo.csv")
+demo = pd.read_csv(local_path / "data/demo.csv")
 
 
 def export_means(means, n_components):
@@ -83,12 +80,12 @@ def main():
     reduced = pd.DataFrame()
     demo = pd.DataFrame()
 
-    reduced_path = local_path / "reduced.csv"
+    reduced_path = local_path / "data/reduced.csv"
 
     with reduced_path.open() as f:
         reduced = pd.read_csv(f)
 
-    demo_path = local_path / "demo.csv"
+    demo_path = local_path / "data/demo.csv"
     with demo_path.open() as f:
         demo = pd.read_csv(f)
 
@@ -107,7 +104,7 @@ def main():
         means |= demo_means(column, demo[column].fillna(
             "None"), data, weights)
 
-    export_means(means, num_components).to_csv(local_path / "means.csv")
+    export_means(means, num_components).to_csv(local_path / "data/means.csv")
 
 
 if __name__ == "__main__":

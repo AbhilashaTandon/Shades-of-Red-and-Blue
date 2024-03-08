@@ -4,10 +4,10 @@ import pandas as pd
 import json
 
 from pathlib import Path
-local_path = Path(__file__).parent
+local_path = Path(__file__).parent.parent
 
 data = pd.read_csv(local_path /
-                   "anes_timeseries_2020_csv_20220210.csv")
+                   "raw/anes_timeseries_2020_csv_20220210.csv")
 
 data = data.drop(data.columns[[15, 17, 18, 19, 21, 22, 23, 25,
                  26, 27, 29, 30, 31, 33, 34, 35, 37, 38, 1508, 1509]], axis=1)
@@ -26,13 +26,13 @@ def read_json(filename):
     return json_dict
 
 
-ideology_vars = read_json("ideo_vars.json")
+ideology_vars = read_json("json/ideo_vars.json")
 # contains all questions we will be handling, with variable names, question titles, questions, and answers
 
 
-demographic_vars = read_json("demo_vars.json")
+demographic_vars = read_json(local_path / "json/demo_vars.json")
 
-demographic_values = read_json("demo_vals.json")
+demographic_values = read_json(local_path / "json/demo_vals.json")
 # meaning of each value in a demographic variable, what indexes mean what categories
 # value 0 in original data corresponds to value at index 0 here,
 
@@ -109,5 +109,5 @@ demo_data = demo_data.rename(columns=demographic_vars)
 ideo_data = pd.concat([ideo_data, weights], axis=1)
 demo_data = pd.concat([demo_data, weights], axis=1)
 
-ideo_data.to_csv(local_path / 'ideo.csv')
-demo_data.to_csv(local_path / 'demo.csv')
+ideo_data.to_csv(local_path / 'data/ideo.csv')
+demo_data.to_csv(local_path / 'data/demo.csv')

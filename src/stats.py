@@ -8,6 +8,12 @@ def weighted_median(values, weights):
     return sorted(values)[median_idx]
 
 
+def weighted_mad(values, weights):
+    median = weighted_median(values, weights)
+    deviations = np.abs(values - median)
+    return weighted_median(deviations, weights)
+
+
 def weighted_mean(values, weights):
     if (values.ndim > 1):
         return np.average(values, weights=weights, axis=0)
