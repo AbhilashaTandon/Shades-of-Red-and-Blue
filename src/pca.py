@@ -100,6 +100,8 @@ def main():
     with demo_path.open() as f:
         demo = pd.read_csv(f)
 
+   print(ideo.head(5))
+
     weights = np.array(ideo['weights'])
 
     data = np.array(ideo.drop(columns='weights').values[:, 1:])

@@ -23,7 +23,6 @@ class AE(torch.nn.Module):
         for x, y in zip(layers[:-1], layers[1:]):
             self.decoder.append(torch.nn.ReLU())
             self.decoder.append(torch.nn.Linear(x, y))
-        self.decoder.append(torch.nn.Sigmoid())
 
     def forward(self, x):
         encoded = self.encoder(x)

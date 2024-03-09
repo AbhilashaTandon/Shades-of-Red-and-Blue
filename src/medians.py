@@ -90,8 +90,6 @@ def main():
 
     num_components = data.shape[1]  # num of components in pca
 
-    print(demo.columns)
-
     medians = {}
 
     for column in demo.columns[1:-2]:  # exclude index, age, and weights
