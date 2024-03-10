@@ -98,6 +98,8 @@ demo_data = data.filter(demographic_vars.keys()).astype(str)
 # e.g. "1": "Protestant"
 # so we make all the integer values strings
 
+stats = pd.DataFrame([means, stdevs], ["Mean", "Stdev"], ideo_data.columns)
+
 demo_data.replace(demographic_values, inplace=True)
 
 for col in demographic_values:
@@ -111,3 +113,4 @@ demo_data = pd.concat([demo_data, weights], axis=1)
 
 ideo_data.to_csv(local_path / 'data/ideo.csv')
 demo_data.to_csv(local_path / 'data/demo.csv')
+stats.to_csv(local_path / "data/stats.csv")

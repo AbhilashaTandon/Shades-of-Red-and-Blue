@@ -30,6 +30,10 @@ def weighted_PCA(X, num_components, weights):
     return X_reduced, eigenvector_subset, explained_variance
 
 
+def apply_pca(X, eigenvector_subset):
+    return np.dot(eigenvector_subset.T, X.T).T
+
+
 def show_histograms(data, num_plots, weights):
     num_samples = data.shape[0]
     num_components = data.shape[1]
@@ -100,7 +104,7 @@ def main():
     with demo_path.open() as f:
         demo = pd.read_csv(f)
 
-   print(ideo.head(5))
+    print(ideo.head(5))
 
     weights = np.array(ideo['weights'])
 

@@ -25,7 +25,6 @@ def export_medians(medians, n_components):
 
 
 def filter_data(filter_category, filter_group, data, weights):
-
     indices = np.where(filter_category == filter_group)[0]
     filtered = np.take(data, indices, axis=0)
     filtered_weights = np.extract(np.array(
