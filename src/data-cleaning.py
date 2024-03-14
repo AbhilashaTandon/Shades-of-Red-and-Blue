@@ -42,7 +42,7 @@ ideo_data = data.filter(ideology_vars.keys())
 # filters ideological questions
 titles = {key: value['title'] for key, value in ideology_vars.items()}
 questions = {key: value['question'] for key, value in ideology_vars.items()}
-positive_answer = {key: value['answer']
+positive_answer = {key: value['positive-answer']
                    for key, value in ideology_vars.items()}
 ideo_data = ideo_data.rename(columns=positive_answer)
 

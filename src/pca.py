@@ -110,7 +110,7 @@ def main():
 
     data = np.array(ideo.drop(columns='weights').values[:, 1:])
 
-    num_components = 10
+    num_components = 5
 
     x_reduced, loadings, explained_variance = weighted_PCA(
         data, num_components, weights)
