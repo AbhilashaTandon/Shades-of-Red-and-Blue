@@ -1,0 +1,9 @@
+.answers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.question {
+  margin: 0 0 5rem 0;
+}
