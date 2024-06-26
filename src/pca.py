@@ -44,7 +44,7 @@ def show_histograms(data, num_plots, weights):
     # stdevs of principal components
     stdevs = stats.weighted_stdev(data, weights)
 
-    fig, axs = plt.subplots(1, num_plots, sharey=True, tight_layout=True)
+    _, axs = plt.subplots(1, num_plots, sharey=True, tight_layout=True)
 
     bins_ = 40
 

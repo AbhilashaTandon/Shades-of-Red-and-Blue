@@ -42,7 +42,7 @@ ideo_data = data.filter(ideology_vars.keys())
 # filters ideological questions
 titles = {key: value['title'] for key, value in ideology_vars.items()}
 questions = {key: value['question'] for key, value in ideology_vars.items()}
-positive_answer = {key: value['positive-answer']
+positive_answer = {key: value['positive_answer']
                    for key, value in ideology_vars.items()}
 ideo_data = ideo_data.rename(columns=positive_answer)
 
@@ -69,14 +69,26 @@ for col_index, col in enumerate(ideo_data):
     # get indices of not missing data
 
     min_, max_ = np.amin(ideo_data[col][not_null]
-                         ), np.amax(weights[not_null])
+                         ), np.amax(ideo_data[col][not_null])
+    middle = (min_ + max_) / 2
+
+    def comp_middle(x):
+        if(x < middle):
+            return -1
+        elif(x > middle):
+            return 1
+        else:
+            return 0.01
+
     ideo_data[col] = ideo_data[col].apply(
-        lambda x: (x - min_)/(max_ - min_) * 6 + 1)
+        lambda x: comp_middle(x))
     # normalize range, most questions have 7 point scale
 
     mean, _ = weighted_mean_and_std(
         ideo_data[col][not_null], weights[not_null])
     means.append(mean)
+    
+    
     # stdev is innacurate since it doesnt count missing vals
     # so we will divide by stdev after setting missing vals to 0
     ideo_data[col] = ideo_data[col].apply(lambda x: (x - mean))
